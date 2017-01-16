@@ -34,7 +34,7 @@ def lambda_handler (event, context):
 			else:
 			    return hello_world()
         elif event['request']['type'] == "SessionEndedRequest":
-        resp = response_tmpl
+        	resp = response_tmpl
         return resp
     else:
         resp = response_tmpl
